@@ -1,6 +1,6 @@
 Flask==2.3.2
-gradio_client==1.10.4 # THIS IS THE CRITICAL CHANGE!
+gradio_client>=0.22.0
 requests==2.31.0
 python-dotenv==1.0.0
-supabase==2.2.0
+supabase>=2.4.0,<3.0.0
 gunicorn==22.0.0
