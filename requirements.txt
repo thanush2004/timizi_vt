@@ -1,6 +1,6 @@
-Flask==2.3.2  # Or the version you are using
-gradio_client==0.17.0 # Or the version you are using
-requests==2.31.0 # Or the version you are using
-python-dotenv==1.0.0 # Or the version you are using
-supabase==2.2.0 # Or the version you are using (supabase-py client)
-gunicorn==22.0.0 # Essential for production deployment
+Flask==2.3.2
+gradio_client==1.10.4 # THIS IS THE CRITICAL CHANGE!
+requests==2.31.0
+python-dotenv==1.0.0
+supabase==2.2.0
+gunicorn==22.0.0
