@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from gradio_client import Client, handle_file
+from gradio_client import Client, handle_file # Re-added handle_file to import
 import os
 import requests
 import uuid
@@ -128,7 +128,7 @@ def virtual_try_on():
         print(f"Gradio Client initialized. Loaded as API: {client.src}")
 
         input_dict = {
-            "background": handle_file(local_human_path),
+            "background": handle_file(local_human_path), # Re-added handle_file
             "layers": [],
             "composite": None
         }
@@ -136,7 +136,7 @@ def virtual_try_on():
         print("Calling Gradio API /tryon...")
         result = client.predict(
             dict=input_dict,
-            garm_img=handle_file(local_garment_path),
+            garm_img=handle_file(local_garment_path), # Re-added handle_file
             garment_des=garment_description,
             is_checked=True,
             is_checked_crop=False,
